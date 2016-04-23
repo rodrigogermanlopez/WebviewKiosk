@@ -138,11 +138,11 @@ public class TestApp extends Sprite {
 	}
 
 	public function onSignal( signal:String, obj:Object ):void {
+		conn.recieverWorks() ;
 		if ( !signal ) {
 			warn( "recieved empty onSignal()?" );
 			return;
 		}
-
 		switch ( signal ) {
 			case "_pingRequest":
 				conn.send( "_pingResponse" );

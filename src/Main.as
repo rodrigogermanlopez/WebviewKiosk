@@ -74,6 +74,7 @@ public class Main extends Sprite {
 	}
 
 	public function onSignal( signal:String, obj:Object ):void {
+		conn.recieverWorks() ;
 		if ( !signal ) {
 			trace( "recieved empty onSignal()?", signal );
 			return;
