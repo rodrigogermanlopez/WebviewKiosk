@@ -1,5 +1,7 @@
 package {
 
+import com.demonsters.debugger.MonsterDebugger;
+
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
@@ -16,9 +18,10 @@ public class Main extends Sprite {
 		stage.showDefaultContextMenu = false;
 		stage.scaleMode = StageScaleMode.NO_SCALE;
 		stage.align = StageAlign.TOP_LEFT;
-		trace( "testing LC" );
+		log( "testing LC" );
 //		testLC();
 		init();
+		MonsterDebugger.initialize( this );
 	}
 
 //	var lc:LocalConnection;
@@ -26,8 +29,8 @@ public class Main extends Sprite {
 	/*private function testLC():void {
 	 Security.allowDomain( "*" );
 	 Security.allowInsecureDomain( "*" );
-	 trace( "sandbox", Security.sandboxType );
-	 trace( "testing LC, send messages each 5 seconds." );
+	 log( "sandbox", Security.sandboxType );
+	 log( "testing LC, send messages each 5 seconds." );
 	 setTimeout( Security.showSettings, 2000 );
 	 lc = new LocalConnection();
 	 lc.addEventListener( StatusEvent.STATUS, trace );
@@ -36,7 +39,7 @@ public class Main extends Sprite {
 	 lc.allowInsecureDomain( "*" );
 	 lc.client = {
 	 pepe: function ( val:String ) {
-	 trace( "recive val", val );
+	 log( "recive val", val );
 	 }
 	 };
 	 lc.connect( "_coco" );
@@ -46,19 +49,20 @@ public class Main extends Sprite {
 	private function sndLoopMsg():void {
 //		lc.send( "app#com.sn.TestApp:magical_connection", "message", 1 );
 //		lc.send("app#Growler:magical_connection", "message", msg);
-		trace( "send()", "magical_connection", "message", 1 );
+		log( "send()", "magical_connection", "message", 1 );
 //		lc.send( "magical_connection", "message", 1 );
 		setTimeout( sndLoopMsg, 5000 );
 	}
 
 	private function init():void {
 		hasEI = ExternalInterface.available;
-		trace( "as3 inited." );
-		trace( "ExtInt availalbe:", hasEI );
+		log( "as3 inited." );
+		log( "ExtInt availalbe:", hasEI );
 		conn = new ConnBridge( ConnBridge.ID_SWF, ConnBridge.ID_AIR, this );
 		//		conn.sendPrefix = "localhost:";
 		//		conn.reciever_lc.allowDomain("app#com.sn.TestApp");
 		conn.callbackName = "onSignal";
+		conn.tracer = log;
 //		conn.recieverOnly = false;
 //		conn.connect();
 		if ( hasEI ) {
@@ -74,17 +78,17 @@ public class Main extends Sprite {
 	}
 
 	public function onSignal( signal:String, obj:Object ):void {
-		conn.recieverWorks() ;
+		conn.recieverWorks();
 		if ( !signal ) {
-			trace( "recieved empty onSignal()?", signal );
+			log( "recieved empty onSignal()?", signal );
 			return;
 		}
-		trace( "recieved signal::", signal );
-		if ( obj ) trace( "recieved obj::", JSON.stringify( obj ) );
+		log( "recieved signal::", signal );
+		if ( obj ) log( "recieved obj::", JSON.stringify( obj ) );
 		switch ( signal ) {
 			// PING stuff
 			case "close":
-				trace( "LC closing conn" );
+				log( "LC closing conn" );
 				conn.close();
 				break;
 			case "_pingRequest":
@@ -92,12 +96,12 @@ public class Main extends Sprite {
 				break;
 			case "_pingResponse":
 				var t:uint = getTimer() - _ping_ts;
-				trace( "PING ok, lag=" + t + "ms" );
+				log( "PING ok, lag=" + t + "ms" );
 				break;
 			case "ping_me":
 				if ( !obj ) obj = {dly: 1};
 				if ( !obj.dly ) obj.dly = 1;
-				trace( "ping in ", obj.dly + "secs" );
+				log( "ping in ", obj.dly + "secs" );
 				setTimeout( pingBridge, obj.dly * 1000 );
 				break;
 
@@ -133,10 +137,10 @@ public class Main extends Sprite {
 		ExternalInterface.addCallback( "js2as_action", onJSAction );
 		var ready:Boolean = ExternalInterface.call( "as2js_onSWFLoaded" );
 		if ( !ready ) {
-			trace( "swf not ready" );
+			log( "swf not ready" );
 			setTimeout( checkReadyState, 50 );
 		} else {
-			trace( "swf ready!!!" );
+			log( "swf ready!!!" );
 			initJS();
 		}
 	}
@@ -145,24 +149,31 @@ public class Main extends Sprite {
 
 	private function initJS():void {
 		// notify app that's loaded.
-		trace( "abount to send js_inited" );
+		log( "abount to send js_inited" );
 		conn.send( "js_inited" );
 		_initedJS = true;
-		trace( "sent js_inited" );
+		log( "sent js_inited" );
 		//	http://localhost:8888/KaonCityscape/
 	}
 
 	function onJSAction( obj:Object ) {
 		if ( obj ) {
-			trace( "JS calleD:::", JSON.stringify( obj ) );
+			log( "JS calleD:::", JSON.stringify( obj ) );
 		} else {
-			trace( "JS called no args." );
+			log( "JS called no args." );
 		}
 		conn.send( "js_action", obj );
 		if ( obj && obj.action == "nav" ) {
-			trace( "LC closing conn" );
+			log( "LC closing conn" );
 			conn.close();
 		}
+	}
+
+
+	public function log( ...args ) {
+		var o:String = args.join( ";" );
+		MonsterDebugger.trace( this, o, "Main", "lbl" );
+//				.apply( this, args );
 	}
 
 }
