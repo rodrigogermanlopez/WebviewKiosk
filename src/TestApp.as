@@ -165,7 +165,8 @@ public class TestApp extends Sprite {
 				break;
 			case "js_action":
 				if ( obj && obj.action == "nav" ) {
-					bat_killIE();
+//					bat_killIE();
+					bat_focus();
 				}
 				// obj has action;id from JS side.
 				info( "JS ACTION>>", JSON.stringify( obj ) );
