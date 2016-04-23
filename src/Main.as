@@ -1,5 +1,7 @@
 package {
 
+import com.demonsters.debugger.MonsterDebugger;
+
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
@@ -16,7 +18,6 @@ public class Main extends Sprite {
 		MonsterDebugger.enabled = true;
 		MonsterDebugger.initialize( this );
 		MonsterDebugger.log( "hello.." );
-
 		stage.showDefaultContextMenu = false;
 		stage.scaleMode = StageScaleMode.NO_SCALE;
 		stage.align = StageAlign.TOP_LEFT;
