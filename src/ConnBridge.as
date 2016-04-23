@@ -51,7 +51,14 @@ public class ConnBridge {
 		 myId = "_myConn" ;
 		 }*/
 		trace( "connect()", myId );
-		reciever_lc.connect( myId );
+		try {
+			reciever_lc.connect( myId );
+		} catch ( e ) {
+			tracer( "ERROR CONNECTION::", e );
+			close();
+			tracer( "try reconnection in 3000" );
+			setTimeout( connect, 3000 );
+		}
 	}
 
 	public function send( signal:String, obj:Object = null ):void {
