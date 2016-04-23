@@ -10,13 +10,7 @@ import flash.display.StageAlign;
 import flash.display.StageDisplayState;
 import flash.display.StageScaleMode;
 import flash.events.Event;
-import flash.events.ProgressEvent;
-import flash.events.ServerSocketConnectEvent;
-import flash.events.StatusEvent;
 import flash.filesystem.File;
-import flash.net.LocalConnection;
-import flash.net.ServerSocket;
-import flash.net.Socket;
 import flash.net.URLRequest;
 import flash.net.navigateToURL;
 import flash.utils.getTimer;
@@ -27,6 +21,7 @@ public class TestApp extends Sprite {
 //	private var bridge:LocalConnector;
 	private var conn:ConnBridge;
 	private var connected:Boolean;
+	private var appDir:File;
 
 	public function TestApp() {
 		stage.scaleMode = StageScaleMode.NO_SCALE;
@@ -42,6 +37,15 @@ public class TestApp extends Sprite {
 		DConsole.show();
 		DConsole.setMagicSequence( [] );
 		DConsole.clear();
+
+
+		// define base app
+		appDir = File.applicationDirectory;
+		if ( appDir.name == "bin" ) {
+			appDir = new File( appDir.nativePath ).parent.resolvePath( "bin-assets" );
+		}
+		info( "app dir::", appDir.exists, " - ", appDir.nativePath );
+
 		// -- map some commands.
 		// type "cmd" to have an idea of what's available.
 		// fs > toggles fullscren.
@@ -52,15 +56,49 @@ public class TestApp extends Sprite {
 		createCmd( ["exec", "open"], openFile, "executes a file; open | exec \"filepath\"" );
 		createCmd( "ping", pingBridge, "ping the other client." );
 		createCmd( "send", sendBridge, "sed a message to the bridge." );
-		createCmd( "cityurl", navurl, "opens cityscape on the browser." );
+		createCmd( "cityscape", navurl, "opens cityscape on the browser." );
+		createCmd( "close", closeConnection, "opens cityscape on the browser." );
+
+		createCmd( "run", bat_run, "opens cityscape on the browser with batch." );
+		createCmd( "killIE", bat_killIE, "kills ie program." );
 
 //		testServer() ;
 //		TestAppServerCode.instance.init() ;
 		initLC();
 	}
 
+	public function bat_run() {
+		var f:File = appDir.resolvePath( "run.lnk" );
+		if ( f.exists ) {
+			debug( "exec run" );
+			f.openWithDefaultApplication();
+		}
+	}
+
+	public function bat_focus() {
+		var f:File = appDir.resolvePath( "focus.lnk" );
+		if ( f.exists ) {
+			debug( "exec focus" );
+			f.openWithDefaultApplication();
+		}
+	}
+
+	public function bat_killIE() {
+		var f:File = appDir.resolvePath( "killIE.lnk" );
+		if ( f.exists ) {
+			debug( "exec killIE" );
+			f.openWithDefaultApplication();
+		}
+	}
+
+	private function closeConnection():void {
+		sendBridge( "close" );
+		conn.close();
+		debug( "closing local and remote connection " );
+	}
+
 	private function navurl():void {
-		navigateToURL( new URLRequest( "http://localhost:8888/KaonCityscape/" ));
+		navigateToURL( new URLRequest( "http://localhost:8888/KaonCityscape/" ) );
 	}
 
 	private var _ping_ts:uint;
@@ -70,7 +108,7 @@ public class TestApp extends Sprite {
 		conn.send( "_pingRequest" );
 	}
 
-	private function sendBridge( signal:String, info:Object ):void {
+	private function sendBridge( signal:String, info:Object = null ):void {
 //		options::    call_js (method,args)
 		if ( info is String && ( info.charAt( 0 ) == "[" || info.charAt( 0 ) == "{") ) {
 			try {
@@ -89,26 +127,12 @@ public class TestApp extends Sprite {
 	//
 	//===================================================================================================================================================
 
-	public function  message(val:int):void {
-		debug("message recieved::", val ) ;
+	public function message( val:int ):void {
+		debug( "message recieved::", val );
 	}
-	private function initLC():void {
-		/*var lc:LocalConnection = new LocalConnection();
-		lc.allowDomain("*") ;
-//		lc.allowDomain("localhost");
-		lc.allowInsecureDomain("*") ;
-		lc.addEventListener( StatusEvent.STATUS, debug );
-//		lc.client = this ;
-//		lc.connect("magical_connection") ;
-		sendMsg() ;
-		function sendMsg(){
-			lc.send("_coco", "pepe", 1 ) ;
-			setTimeout(sendMsg, 3000 ) ;
-		}
 
-		return ;*/
+	private function initLC():void {
 		conn = new ConnBridge( ConnBridge.ID_AIR, ConnBridge.ID_SWF, this );
-//		conn.sendPrefix = "localhost:";
 		conn.tracer = debug;
 		conn.callbackName = "onSignal";
 	}
@@ -179,6 +203,7 @@ public class TestApp extends Sprite {
 
 	private function exit():void {
 		debug( "Quitting app in 1 sec." );
+		closeConnection();
 		setTimeout( function () {
 			NativeApplication.nativeApplication.exit();
 		}, 1000 );
