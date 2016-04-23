@@ -2,292 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e3f39bf-44cb-4543-80b0-b3ac2120e480" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-template/playerProductInstall.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/assets/button_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/assets/button_inactive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/assets/furulogo.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/fonts/cft.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/assets/eyeDropper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/assets/minusbutton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/assets/plusbutton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-template/history/history.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-template/history/history.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-template/history/historyFrame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-template/index.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html-template/swfobject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ConnBridge.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TestApp.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TestAppServerCode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/images/PNGEncoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/serialization/json/JSON.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/serialization/json/JSONDecoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/serialization/json/JSONEncoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/serialization/json/JSONParseError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/serialization/json/JSONToken.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/serialization/json/JSONTokenType.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/adobe/serialization/json/JSONTokenizer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/boostworthy/geom/ColorBar.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/DConsole.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/IConsole.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/DSprite.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/Notifications.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/Version.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/animation/ConsoleTweener.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/animation/EasingTween.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/animation/IConsoleTweenProcess.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/animation/LinearTween.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/bitmap/BMPEncoder.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/bitmap/Bresenham.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/commands/CommandArgument.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/commands/CommandManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/commands/ConsoleCommand.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/commands/FunctionCallCommand.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/commands/IntrospectionCommand.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/commands/UnparsedCommand.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/commands/utils/ArgumentSplitterUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/effects/Filters.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/errors/CommandError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/errors/ConsoleAuthError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/errors/ErrorStrings.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/errors/NotImplementedError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/AbstractButton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/DockingGuides.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/DropDown.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/DropDownOption.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/FuruLogoGraphic.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/ScaleHandle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/SimpleScrollbar.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/SimpleScrollbarNorm.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/TextFieldFactory.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/ToolTip.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/Window.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/debugdraw/DebugDraw.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/events/DropDownEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/layout/Cell.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/layout/HorizontalSplit.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/layout/IContainable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/layout/ILayoutContainer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/layout/VerticalSplit.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/ConsoleView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/assistant/Assistant.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/assistant/CornerScaleHandle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/filtertabrow/FilterTabButton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/filtertabrow/FilterTabRow.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/input/InputField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/output/OutputField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/sections/ConsoleViewSection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/sections/FooterSection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/sections/HeaderSection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/sections/InspectorSection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/sections/MainSection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/toolbar/ConsoleToolbar.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/gui/maindisplay/toolbar/ToolbarClock.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/helpmanager/HelpManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/helpmanager/HelpTopic.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyBindings.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyHandlerResult.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyboardList.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyboardManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyboardSequence.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyboardSequences.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyboardShortcut.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/input/KeyboardShortcuts.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/inspector/AbstractInspectorView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/inspector/IInspectorView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/inspector/Inspector.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/inspector/assets/InspectorAssets.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/inspector/buttons/ModeSelector.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/interfaces/IConsoleDisplay.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/interfaces/IDisposable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/interfaces/IHasChildren.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/interfaces/IScrollable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/interfaces/IThemeable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/InspectionUtils.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/IntrospectionScope.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/ScopeManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/TreeUtils.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/descriptions/AccessorDesc.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/descriptions/ChildScopeDesc.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/descriptions/MethodDesc.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/descriptions/NamedDescription.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/descriptions/ParamDesc.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/introspection/descriptions/VariableDesc.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/io/BufferedReader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/io/FileReader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/io/ICloseable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/io/IReadable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/io/Reader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/io/StringReader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/logmanager/DConsoleLog.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/logmanager/DLogFilter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/logmanager/DLogIterator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/logmanager/DLogManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/output/ConsoleMessage.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/output/ConsoleMessageRepeatMode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/output/ConsoleMessageTypes.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/persistence/PersistenceManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/persistence/PersistentProperty.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/plugins/IDConsoleInspectorPlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/plugins/IDConsolePlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/plugins/IFilteringDConsolePlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/plugins/IParsingDConsolePlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/plugins/IPluginBundle.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/plugins/IUpdatingDConsolePlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/plugins/PluginManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/references/ReferenceManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/search/DisplayListSearch.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/security/ConsoleLock.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/strings/AssistantStringCollection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/strings/AssistantStrings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/strings/StringCollection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/strings/Strings.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/Alphas.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/BaseColors.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/ColorCollection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/Colors.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/GUIUnits.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/StyleManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/TextColors.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/TextFormats.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/fonts/Fonts.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/themes/ConsoleTheme.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/themes/black/black.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/themes/black/black_colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/themes/solarized/solarized_colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/themes/solarized/solarized_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/style/themes/solarized/solarized_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/text/TextUtils.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/text/autocomplete/AutocompleteDictionary.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/text/autocomplete/AutocompleteManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/ArgumentCleaner.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/ColorUtils.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/LLNode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/ListIterator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/Property.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/StopWatch.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/StringUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/core/utils/TooltipHelper.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/logging/ConsoleLogBinding.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/BatchRunnerUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/BugReporterUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/BytearrayHexdumpUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/ChainsawConnectorUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/ClassFactoryUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/ClockUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/CommandMapperUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/FontUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/JSONParserUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/JSRouterUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/LoadingUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/LogFileUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/MathUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/MouseUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/PerformanceTesterUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/ProductInfoUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/ScreenshotUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/SelectionHistoryUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/StageUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/StatsOutputUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/SystemInfoUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/colorpicker/ColorPickerUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/controller/ControlField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/controller/Controller.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/controller/ControllerEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/controller/ControllerUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/dialog/DialogDesc.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/dialog/DialogNotifications.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/dialog/DialogRequest.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/dialog/DialogResult.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/dialog/DialogSequence.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/dialog/DialogUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/errorcodeutil/ErrorCodes2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/errorcodeutil/ErrorLookupUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/inputmonitor/InputMonitorUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/inputmonitor/KeyboardAccumulator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/notepad/NotepadUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/PropertyViewUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/TabCollection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/TabContent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/fieldtypes/ChildField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/fieldtypes/ControlField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/fieldtypes/MethodField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/fieldtypes/ObjectField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/fieldtypes/PropertyField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/fieldtypes/WidgetField.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/tabs/InheritanceTab.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/tabs/OverviewTab.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/tabs/PropertyTab.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/propertyview/tabs/TransformTab.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/IRenderable.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/ListSection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/TreeViewUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/buttons/EyeDropperButton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/buttons/Minusbutton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/buttons/Plusbutton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/dfs/DFS.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/noderenderers/INodeRenderer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/inspectorviews/treeview/noderenderers/ListNode.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/invokegesture/InvokeGestureUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/irc/IrcUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/measurebracket/MeasurementBracketUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/mediatester/MediaTesterUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/mediatester/NetStatusEventCodes.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/mediatester/SimpleVideoPlayer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/monitoring/GraphValue.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/monitoring/GraphValueStack.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/monitoring/GraphWindow.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/monitoring/Monitor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/monitoring/MonitorManager.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/monitoring/StatGraph.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/plugcollections/AllPlugins.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/plugcollections/BasicPlugins.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/MasterConsoleUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/RemoteInfo.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/SlaveConsoleUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/TelnetUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/io/MasterConsoleServer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/io/RemoteConsoleMessage.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/io/RemoteMessageTypes.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/plugins/remoteconsole/io/RemoteSocketConnection.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/utilities/ColorDef.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/utilities/ColorSelector.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/utilities/ColorSwatch.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/utilities/PaletteView.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/utilities/ThemeConfigurer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/dconsole2/utilities/ThemeEditor.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/ILogger.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/Logging.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/bindings/ILogBinding.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/bindings/TraceBinding.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/constants/Levels.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/constants/PatternTypes.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/global/debug.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/global/error.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/global/fatal.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/global/info.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/global/log.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/global/warn.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/loggers/Logger.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/utils/LevelInfo.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/utils/PatternResolver.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/logging/slf4as/utils/TagCreator.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/messaging/pimp/IMessageReceiver.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/messaging/pimp/Message.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/messaging/pimp/MessageData.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/messaging/pimp/MessageQueueItem.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/furusystems/messaging/pimp/PimpCentral.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/CRC32.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/Deflater.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/Inflater.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/ZipConstants.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/ZipEntry.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/ZipError.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/ZipFile.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zip/ZipOutput.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-assets/readme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chrome_lc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -310,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestApp.as" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestApp.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TestApp.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5813953">
+              <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
               <folding>
                 <element signature="e#11#53#0" expanded="true" />
               </folding>
@@ -322,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="connector.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connector.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19866444">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -363,6 +80,7 @@
         <option value="$PROJECT_DIR$/src/Main.as" />
         <option value="$PROJECT_DIR$/src/TestApp.as" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/bin-assets/readme" />
       </list>
     </option>
   </component>
@@ -372,7 +90,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
+    <option name="x" value="26" />
     <option name="y" value="23" />
     <option name="width" value="1398" />
     <option name="height" value="877" />
@@ -444,6 +162,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bin-assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chrome_lc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebviewKiosk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -466,7 +198,7 @@
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin-assets" />
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
@@ -882,7 +614,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="23" width="1398" height="877" extended-state="0" />
+    <frame x="26" y="23" width="1398" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1108,21 +840,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestApp.as">
+    <entry file="file://$PROJECT_DIR$/connector.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#11#53#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19866444">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5392321">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin-assets/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024147727">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestApp.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5813953">
+          <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+          <folding>
+            <element signature="e#11#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

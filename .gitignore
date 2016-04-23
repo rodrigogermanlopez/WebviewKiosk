@@ -3,8 +3,8 @@
 
 # IntelliJ project files
 #.idea
-#*.iml
-#bin/
+*.iml
+bin/
 
 gen### Actionscript template
 # Build and Release Folders
