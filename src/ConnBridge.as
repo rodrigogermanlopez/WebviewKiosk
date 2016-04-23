@@ -50,6 +50,8 @@ public class ConnBridge {
 		/*if( myId.indexOf(":")>-1){
 		 myId = "_myConn" ;
 		 }*/
+
+        
 		trace( "connect()", myId );
 		try {
 			reciever_lc.connect( myId );
