@@ -94,6 +94,7 @@ public class ConnBridge {
 	}
 
 	public function close():void {
+		if( !connected ) return ;
 		try { reciever_lc.close()} catch ( e:Error ) {trace( "LC close error", e )}
 		try { sender_lc.close()} catch ( e:Error ) {trace( "LC close error", e )}
 		connected = false ;

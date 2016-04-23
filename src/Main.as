@@ -1,7 +1,5 @@
 package {
 
-import com.demonsters.debugger.MonsterDebugger;
-
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
@@ -66,6 +64,10 @@ public class Main extends Sprite {
 		//		conn.reciever_lc.allowDomain("app#com.sn.TestApp");
 		conn.callbackName = "onSignal";
 		conn.tracer = log;
+
+		// maybe it was previously connected.
+		conn.send( "_handshake" );
+
 //		conn.recieverOnly = false;
 //		conn.connect();
 		if ( hasEI ) {
@@ -90,6 +92,9 @@ public class Main extends Sprite {
 		if ( obj ) log( "recieved obj::", JSON.stringify( obj ) );
 		switch ( signal ) {
 			// PING stuff
+			case "_handshake":
+				conn.recieverWorks();
+				break;
 			case "close":
 				log( "LC closing conn" );
 				conn.close();
@@ -138,6 +143,7 @@ public class Main extends Sprite {
 
 	private function checkReadyState():void {
 		ExternalInterface.addCallback( "js2as_action", onJSAction );
+		ExternalInterface.addCallback( "js2as_unload", onUnload );
 		var ready:Boolean = ExternalInterface.call( "as2js_onSWFLoaded" );
 		if ( !ready ) {
 			log( "swf not ready" );
@@ -146,6 +152,11 @@ public class Main extends Sprite {
 			log( "swf ready!!!" );
 			initJS();
 		}
+	}
+
+	private function onUnload():void {
+		log( "UNLOADING BROWSER." );
+		conn.close();
 	}
 
 	var _initedJS:Boolean = false;
@@ -174,7 +185,7 @@ public class Main extends Sprite {
 
 
 	public function log( ...args ) {
-		trace("loggin:", args ) ;
+		trace( "loggin:", args );
 //		var o:String = args.join( ";" );
 //		MonsterDebugger.trace( this, o, "Main", "lbl" );
 		MonsterDebugger.log.apply( this, args );

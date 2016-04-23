@@ -38,7 +38,6 @@ public class TestApp extends Sprite {
 		DConsole.setMagicSequence( [] );
 		DConsole.clear();
 
-
 		// define base app
 		appDir = File.applicationDirectory;
 		if ( appDir.name == "bin" ) {
@@ -86,8 +85,13 @@ public class TestApp extends Sprite {
 	public function bat_killIE() {
 		var f:File = appDir.resolvePath( "win/killie.lnk" );
 		if ( f.exists ) {
-			debug( "exec killIE" );
-			f.openWithDefaultApplication();
+			// first send a kill signal to the swf.
+			sendBridge( "close" );
+			setTimeout( function () {
+				debug( "exec killIE" );
+				f.openWithDefaultApplication();
+			}, 500 );
+
 		}
 	}
 
@@ -138,12 +142,15 @@ public class TestApp extends Sprite {
 	}
 
 	public function onSignal( signal:String, obj:Object ):void {
-		conn.recieverWorks() ;
+		conn.recieverWorks();
 		if ( !signal ) {
 			warn( "recieved empty onSignal()?" );
 			return;
 		}
 		switch ( signal ) {
+			case "_handshake":
+				conn.send( "_handshake" );
+				break;
 			case "_pingRequest":
 				conn.send( "_pingResponse" );
 				break;
