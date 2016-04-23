@@ -15,13 +15,16 @@ public class Main extends Sprite {
 	private var hasEI:Boolean;
 
 	public function Main() {
+		MonsterDebugger.enabled = true;
+		MonsterDebugger.initialize( this );
+		MonsterDebugger.log( "hello.." );
+
 		stage.showDefaultContextMenu = false;
 		stage.scaleMode = StageScaleMode.NO_SCALE;
 		stage.align = StageAlign.TOP_LEFT;
-		log( "testing LC" );
 //		testLC();
 		init();
-		MonsterDebugger.initialize( this );
+		log( "testing LC" );
 	}
 
 //	var lc:LocalConnection;
@@ -171,9 +174,10 @@ public class Main extends Sprite {
 
 
 	public function log( ...args ) {
-		var o:String = args.join( ";" );
-		MonsterDebugger.trace( this, o, "Main", "lbl" );
-//				.apply( this, args );
+		trace("loggin:", args ) ;
+//		var o:String = args.join( ";" );
+//		MonsterDebugger.trace( this, o, "Main", "lbl" );
+		MonsterDebugger.log.apply( this, args );
 	}
 
 }
