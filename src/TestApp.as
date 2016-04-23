@@ -68,7 +68,7 @@ public class TestApp extends Sprite {
 	}
 
 	public function bat_run() {
-		var f:File = appDir.resolvePath( "run.lnk" );
+		var f:File = appDir.resolvePath( "win/run.lnk" );
 		if ( f.exists ) {
 			debug( "exec run" );
 			f.openWithDefaultApplication();
@@ -76,7 +76,7 @@ public class TestApp extends Sprite {
 	}
 
 	public function bat_focus() {
-		var f:File = appDir.resolvePath( "focus.lnk" );
+		var f:File = appDir.resolvePath( "win/focus.lnk" );
 		if ( f.exists ) {
 			debug( "exec focus" );
 			f.openWithDefaultApplication();
@@ -84,7 +84,7 @@ public class TestApp extends Sprite {
 	}
 
 	public function bat_killIE() {
-		var f:File = appDir.resolvePath( "killIE.lnk" );
+		var f:File = appDir.resolvePath( "win/killie.lnk" );
 		if ( f.exists ) {
 			debug( "exec killIE" );
 			f.openWithDefaultApplication();
