@@ -159,6 +159,7 @@ public class Main extends Sprite {
 		}
 		conn.send( "js_action", obj );
 		if ( obj && obj.action == "nav" ) {
+			trace( "LC closing conn" );
 			conn.close();
 		}
 	}
