@@ -22,6 +22,7 @@ public class TestApp extends Sprite {
 	private var conn:ConnBridge;
 	private var connected:Boolean;
 	private var appDir:File;
+	private var batDir:File;
 
 	public function TestApp() {
 		stage.scaleMode = StageScaleMode.NO_SCALE;
@@ -42,8 +43,19 @@ public class TestApp extends Sprite {
 		appDir = File.applicationDirectory;
 		if ( appDir.name == "bin" ) {
 			appDir = new File( appDir.nativePath ).parent.resolvePath( "bin-assets" );
+			batDir = appDir.resolvePath("win") ;
 		}
+
+		if ( appDir.name != "bin" ) {
+			// copy bat files.
+			var from:File = appDir.resolvePath("win") ;
+			var to:File = File.applicationStorageDirectory.resolvePath( "win" ) ;
+			from.copyTo(to) ;
+			batDir = to ;
+		}
+
 		info( "app dir::", appDir.exists, " - ", appDir.nativePath );
+		info( "bat dir::", batDir.exists, " - ", batDir.nativePath );
 
 		// -- map some commands.
 		// type "cmd" to have an idea of what's available.
@@ -67,7 +79,7 @@ public class TestApp extends Sprite {
 	}
 
 	public function bat_run() {
-		var f:File = appDir.resolvePath( "win/run.lnk" );
+		var f:File = batDir.resolvePath( "run.lnk" );
 		if ( f.exists ) {
 			debug( "exec run" );
 			f.openWithDefaultApplication();
@@ -75,7 +87,7 @@ public class TestApp extends Sprite {
 	}
 
 	public function bat_focus() {
-		var f:File = appDir.resolvePath( "win/focus.lnk" );
+		var f:File = batDir.resolvePath( "focus.lnk" );
 		if ( f.exists ) {
 			debug( "exec focus" );
 			f.openWithDefaultApplication();
@@ -83,7 +95,7 @@ public class TestApp extends Sprite {
 	}
 
 	public function bat_killIE() {
-		var f:File = appDir.resolvePath( "win/killie.lnk" );
+		var f:File = batDir.resolvePath( "killie.lnk" );
 		if ( f.exists ) {
 			// first send a kill signal to the swf.
 			sendBridge( "close" );
