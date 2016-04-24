@@ -114,6 +114,13 @@ public class Main extends Sprite {
 				setTimeout( pingBridge, obj.dly * 1000 );
 				break;
 
+			case "goback":
+				if ( hasEI ) {
+					log("calling goback!") ;
+					ExternalInterface.call( "as2js_back" );
+				}
+				break;
+
 			case "js_hi":
 				if ( !hasEI ) {
 					conn.send( "error", {msg: "ExternalInterface not available"} );
@@ -187,9 +194,11 @@ public class Main extends Sprite {
 
 	public function log( ...args ) {
 		trace( "loggin:", args );
+		var str: String = args.join(" ") ;
 //		var o:String = args.join( ";" );
 //		MonsterDebugger.trace( this, o, "Main", "lbl" );
-		MonsterDebugger.log.apply( this, args );
+//		MonsterDebugger.log.apply( this, args );
+		MonsterDebugger.log( str );
 	}
 
 }
